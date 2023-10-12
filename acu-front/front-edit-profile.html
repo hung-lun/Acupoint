@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/front-edit-profile.css">
+    <title>修改個人資料</title>
+</head>
+
+<body>
+    <img class="bg" src="./img/background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./front-index.html"><img src="./img/mainlogo.png "></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./front-diagnosis-q01.html">症狀診斷</a>
+                        </li>
+                        <li>
+                            <a href="./front-rehabilitation.html">穴位復健</a>
+                        </li>
+                        <li>
+                            <a href="./front-history.html">歷史紀錄</a>
+                        </li>
+                        <li>
+                            <a class="thispage" href="./front-edit-profile.html">修改個人資料</a>
+                        </li>
+                        <li>
+                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <form>　<a class="title">修改個人資料</a>
+            <div class="signup-content">
+                <div class="signup-user">帳號：　<input class="disable" type="text" id="user" name="user" placeholder="email" value="s1311131028@nutc.edu.tw" disabled="disabled"></div>
+                <div class="signup-user">姓名：　<input type="text" id="user" name="user" placeholder="name" required></div>
+                <div class="signup-user">性別：　<select class="text" name="sex">
+                    <option value="">請選擇性別</option>
+                    <option value="boy">男生</option>
+                    <option value="gril">女生</option>
+                    <option value="unknow">不願透漏</option>
+                </select></div>
+                <div class="signup-user">年齡：　<input class="age" type="number" id="user" name="user" placeholder="age" required></div>
+                <div class="function">
+                    <div class="signup-button"><input type="reset" class="signupb mouse" id="reset" value="重設" onclick=""></div>
+                    <div class="signup-button"><input type="button" class="signupb mouse" id="next" value="修改" onclick=""></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./js/"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

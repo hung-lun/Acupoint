@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/front-index.css">
+    <title>首頁</title>
+</head>
+<body>
+    <img class="bg" src="./img/background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./front-index.html"><img src="./img/mainlogo.png "></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./front-diagnosis-q01.html">症狀診斷</a>
+                        </li>
+                        <li>
+                            <a href="./front-rehabilitation.html">穴位復健</a>
+                        </li>
+                        <li>
+                            <a href="./front-history.html">歷史紀錄</a>
+                        </li>
+                        <li>
+                            <a href="./front-edit-profile.html">修改個人資料</a>
+                        </li>
+                        <li>
+                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                        <li>
+                            <a id="logout1" class="mouse"><i class="fa-solid fa-right-from-bracket"></i></a> <!--平板RWD-->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a id="mm" class="mm"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a> <!--手機RWD-->
+        </div>
+    </header>
+    <div id="center-box1" class="center-box1"> <!--手機RWD-->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="./front-diagnosis-q01.html">症狀診斷</a>
+                </li>
+                <li>
+                    <a href="./front-rehabilitation.html">穴位復健</a>
+                </li>
+                <li>
+                    <a href="./front-history.html">歷史紀錄</a>
+                </li>
+                <li>
+                    <a href="./front-edit-profile.html">修改個人資料</a>
+                </li>
+                <li>
+                    <a id="logout2" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script src="./js/front-index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

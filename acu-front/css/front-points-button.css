@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif, '微軟正黑體';
+    margin: 0px;
+    font-size: 20px;
+}
+
+.btn-space{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 80px;
+    padding: 0px 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    background-color: #DDCFAB;
+    color: #5D3A00;
+    border: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #5D3A00;
+    color: #FFFFFF;
+}

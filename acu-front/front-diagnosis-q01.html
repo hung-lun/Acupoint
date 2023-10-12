@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/front-diagnosis-q01.css">
+    <title>症狀診斷</title>
+</head>
+<body>
+    <img class="bg" src="./img/main-background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./front-index.html"><img src="./img/mainlogo.png "></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="thispage" href="./front-diagnosis-q01.html">症狀診斷</a>
+                        </li>
+                        <li>
+                            <a href="./front-rehabilitation.html">穴位復健</a>
+                        </li>
+                        <li>
+                            <a href="./front-history.html">歷史紀錄</a>
+                        </li>
+                        <li>
+                            <a href="./front-edit-profile.html">修改個人資料</a>
+                        </li>
+                        <li>
+                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <div class="title">症狀診斷🌿- 乾眼症評分方式(OSDI)</div>
+        <div class="question">一、過去一週眼部感受</div>
+        <form action="./front-diagnosis-q02.html">
+            <table>
+                <tr>
+                    <td class="Q-title">　</td>
+                    <td class="Q-option">隨時</td>
+                    <td class="Q-option">大部分時間</td>
+                    <td class="Q-option">約一半時間</td>
+                    <td class="Q-option">偶爾</td>
+                    <td class="Q-option">無</td>
+                </tr>
+                <tr>
+                    <td class="Q-title">乾澀</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact01" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact01" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact01" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact01" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact01" value="0" required/></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">畏光</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact02" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact02" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact02" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact02" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact02" value="0" required/></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">發紅有血絲</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact03" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact03" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact03" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact03" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact03" value="0" required/></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">痠痛</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact04" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact04" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact04" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact04" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact04" value="0" required/></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">異物感</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact05" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact05" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact05" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact05" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact05" value="0" required/></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">分泌物黏稠</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact06" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact06" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact06" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact06" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact06" value="0" required/></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">視力模糊</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact07" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact07" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact07" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact07" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact07" value="0" required/></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">視力不佳</td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact08" value="4" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact08" value="3" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact08" value="2" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact08" value="1" required/></td>
+                    <td class="Q-option"><input type="radio" id="contactChoice1" name="contact08" value="0" required/></td>
+                </tr>
+            </table>
+                <nav class="next">
+                    <ul>
+                        <li>
+                            <button class="mouse" type="submit"><i class="fa-solid fa-angle-right"></i></button>
+                        </li>
+                    </ul>
+                </nav>
+        </form>
+    </div>
+</body>
+<script src="./js/front-diagnosis-q01.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

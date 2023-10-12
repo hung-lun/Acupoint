@@ -1,0 +1,253 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif, '微軟正黑體';
+    background-color: rgba(255, 250, 244, 1);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    position: fixed;
+    z-index: -1;
+}
+
+.mouse {
+    cursor: pointer;
+}
+
+.noline {
+    text-decoration: none;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 10px 15px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 18px;
+    color: #5A3A29;
+}
+
+/* input[type=text]:focus {
+    background-color: #b8b6b6;
+} */
+
+input[type=password] {
+    width: 50%;
+    padding: 10px 15px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 17px;
+    color: #5A3A29;
+}
+
+/* input[type=password]:focus {
+    background-color: #b8b6b6;
+} */
+
+.verification-num{
+    width: 29%;
+    padding: 10px 15px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 17px;
+    color: #5A3A29;
+}
+
+
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #E0DFD5;
+    position: fixed;
+    z-index: 9;
+    top: 0px;
+    overflow: auto;
+}
+
+.header-content {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    /*上右下左*/
+    padding: 0px 20px 0px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 300px;
+}
+
+.center-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.menu ul {
+    /*取消項目符號*/
+    list-style-type: none;
+    display: flex;
+    height: 50%;
+}
+
+.menu li {
+    height: 50%;
+    display: contents;
+}
+
+.menu a {
+    color: #5D3A00;
+    font-size: 22px;
+    /*取消底線*/
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.05em;
+    align-items: center;
+    display: flex;
+}
+
+.menu a:hover {
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.fake-header{
+    height: 150px;
+    width: 100%;
+}
+
+
+
+/*header結束*/
+
+
+
+.content {
+    height: calc(100vh - 150px);
+    min-height: 700px;
+    /* width: calc(100% - 600px);
+    padding: 0px 300px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 18px;
+    color: #5D3A00;
+}
+
+.forget-content {
+    width: 500px;
+    background-color: #E0DFD5;
+    border-radius: 15px;
+    padding: 40px 20px 30px 20px;
+    opacity: 0.8;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    font-size: 20px;
+    color: #5D3A00;
+    font-weight: bold;
+}
+
+.pwd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    font-size: 20px;
+    color: #5D3A00;
+    font-weight: bold;
+}
+
+.resend{
+    background-color: #FFFFFF;
+    color: #D8A36B;
+    font-size: 16px;
+    padding: 8px 8px;
+    margin-left: 8px;
+    font-weight: bold;
+    border: 1px solid #D8A36B;
+    border-radius: 15px;
+}
+
+.resend:hover{
+    background-color: #D8A36B;
+    color: #FFFFFF;
+}
+
+.forget-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 30%;
+    margin-top: 15px;
+}
+
+.button {
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    font-size: 22px;
+    border-radius: 15px;
+    border: 0px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e17400;
+    color: #EAE4DD;
+}
+
+.function {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 70px; */
+    width: 100%;
+    margin-top: 20px;
+}

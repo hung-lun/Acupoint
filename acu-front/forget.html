@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/forget.css">
+    <title>忘記密碼</title>
+</head>
+<body>
+    <img class="bg" src="./img/background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./login.html"><img src="./img/mainlogo.png "></a>
+            </div>
+            <!-- <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="">症狀診斷</a>
+                        </li>
+                        <li>
+                            <a href="">穴位復健</a>
+                        </li>
+                        <li>
+                            <a href="">歷史紀錄</a>
+                        </li>
+                        <li>
+                            <a href="">修改個人資料</a>
+                        </li>
+                        <li>
+                            <a href="./login.html"><i class="fa-solid fa-right-from-bracket">登入</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <form>　<a class="title">忘記密碼</a>
+            <div class="forget-content">
+                <div class="user">帳　號：<input type="text" id="user" name="user" placeholder="email" value="" required></div>
+                <div class="pwd">
+                    驗證碼：<input class="verification-num" type="" id="verification_num" name="verification_num" placeholder="請輸入驗證碼" required>
+                    <input type="button" class="resend mouse" id="resend" value="發送驗證碼">
+                </div>
+                <div class="pwd">
+                    新密碼：<input type="password" id="newpwd" name="newpwd" placeholder="請輸入新密碼" required>
+                </div>
+                <div class="function">
+                    <div class="forget-button"><input type="button" class="button mouse" id="goback" value="返回" onclick="location.href='login.html';"></div>
+                    <div class="forget-button"><input type="button" class="button mouse" id="update" value="修改" onclick="return nextt()"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./js/forget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

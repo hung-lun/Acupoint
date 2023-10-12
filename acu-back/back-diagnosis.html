@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/back-diagnosis.css">
+    <title>症狀診斷問題管理</title>
+</head>
+<body>
+    <img class="bg" src="./img/main-background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./back-index.html"><img src="../front/front/img/mainlogo.png"></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="thispage" href="./front-diagnosis-q01.html">症狀診斷</a>
+                        </li>
+                        <li>
+                            <a href="./front-rehabilitation.html">穴位復健</a>
+                        </li>
+                        <li>
+                            <a href="./front-history.html">歷史紀錄</a>
+                        </li>
+                        <li>
+                            <a href="./front-edit-profile.html">修改個人資料</a>
+                        </li>
+                        <li>
+                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <div class="title">症狀診斷🌿- 乾眼症評分方式(OSDI)</div>
+        <div class="question">一、過去一週眼部感受</div><input type="button" value="ADD" style="width:auto"><input type="button" value="SAVE" style="width:auto">
+        <form action="./front-diagnosis-q02.html">
+            <table>
+                <tr>
+                    <td class="Q-title">1.　<input type="text" value="乾澀"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">2.　<input type="text" value="畏光"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">3.　<input type="text" value="發紅有血絲"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">4.　<input type="text" value="痠痛"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">5.　<input type="text" value="異物感"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">6.　<input type="text" value="分泌物黏稠"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">7.　<input type="text" value="視力模糊"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">8.　<input type="text" value="視力不佳"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+            </table>
+
+
+            <div class="question">二、過去一週眼睛不適，對下列何者活動產生影響</div><input type="button" value="ADD" style="width:auto"><input type="button" value="SAVE" style="width:auto">
+            <table>
+                <tr>
+                    <td class="Q-title">9.　<input type="text" value="閱讀"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">10.　<input type="text" value="使用手機/電腦"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">11.　<input type="text" value="夜間開車"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">12.　<input type="text" value="看電視"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+            </table>
+
+            <div class="question">三、過去一週眼睛在以下何種狀況感到不舒服</div><input type="button" value="ADD" style="width:auto"><input type="button" value="SAVE" style="width:auto">
+            <table>
+                <tr>
+                    <td class="Q-title">13.　<input type="text" value="颳風時(眼睛怕風)"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">14.　<input type="text" value="乾燥環境"><input type="button" value="DELETE" style="width:auto"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">15.　<input type="text" value="冷氣房"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script src="./js/back-diagnosis.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

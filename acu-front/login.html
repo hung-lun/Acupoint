@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/login.css">
+    <title>使用者登入</title>
+</head>
+<body>
+    <img class="bg" src="./img/background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./login.html"><img src="./img/mainlogo.png "></a>
+            </div>
+            <!-- <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="">症狀診斷</a>
+                        </li>
+                        <li>
+                            <a href="">穴位復健</a>
+                        </li>
+                        <li>
+                            <a href="">歷史紀錄</a>
+                        </li>
+                        <li>
+                            <a href="">修改個人資料</a>
+                        </li>
+                        <li>
+                            <a href="./login.html"><i class="fa-solid fa-circle-user">登入</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <form>　<a class="title">登入</a>
+            <div class="login-content">
+                <div class="login-user">帳號：　<input type="text" id="user" name="user" placeholder="email" required></div>
+                <div class="login-pwd">密碼：　<input type="password" id="pwd" name="pwd" placeholder="password" required></div>
+                <div class="login-button"><input type="button" class="loginb mouse" value="登入" onclick="return login();">
+                </div>
+                <div class="function">
+                    <div class="register"><a href="./signup.html" class="noline">註冊帳號</a></div>
+                    <div class="forget"><a href="./forget.html" class="noline">忘記密碼?</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

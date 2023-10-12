@@ -1,0 +1,330 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif, '微軟正黑體';
+    background-color: rgba(255, 250, 244, 1);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    position: fixed;
+    z-index: -1;
+}
+
+.mouse {
+    cursor: pointer;
+}
+
+.noline {
+    text-decoration: none;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 10px 15px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 18px;
+    color: #5A3A29;
+}
+
+/* input[type=text]:focus {
+    background-color: #b8b6b6;
+} */
+
+input[type=password] {
+    width: 50%;
+    padding: 10px 15px;
+    box-sizing: content-box;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 17px;
+    color: #5A3A29;
+}
+
+/* input[type=password]:focus {
+    background-color: #b8b6b6;
+} */
+
+.thispage{
+    color: #FFFFFF;
+    border-bottom: 5px solid #D8A36B;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #E0DFD5;
+    position: fixed;
+    z-index: 9;
+    top: 0px;
+    overflow: auto;
+}
+
+.header-content {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    /*上右下左*/
+    padding: 0px 20px 0px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 300px;
+}
+
+.center-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.menu ul {
+    /*取消項目符號*/
+    list-style-type: none;
+    display: flex;
+    height: 50%;
+}
+
+.menu li {
+    height: 50%;
+    display: contents;
+}
+
+.menu a {
+    color: #5D3A00;
+    font-size: 22px;
+    /*取消底線*/
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.05em;
+    align-items: center;
+    display: flex;
+}
+
+.menu a:hover {
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-bottom: 0px;
+}
+
+.fake-header{
+    height: 150px;
+    width: 100%;
+}
+
+
+/*header結束*/
+
+
+
+
+.content {
+    height: calc(100% - 150px);
+    min-height: 550px;
+    padding: 10px 20px 30px 20px;
+    /* width: calc(100% - 600px); */
+    /* padding: 0px 300px; */
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+
+/* form {
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+} */
+
+.title{
+    color: #D8A36B;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid #5D3A00;
+    padding: 0px 5px 2px 5px;
+}
+
+.question{
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    font-size: 26px;
+    padding: 2px 20px 2px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.count{
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    font-size: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 20px 2px 20px;
+    border-radius: 25px;
+    width: 10%;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.Q-button-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+/* .Q-button{
+    width: calc((100% - 240px)/6);
+    padding: 15px 0px 15px 0px;
+    margin: 10px 20px 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 15px;
+    background-color: #DDCFAB;
+    color: #74512E;
+    border: 0px;
+} */
+label{
+    width: 180px;
+    margin: 0px 40px 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border: 0px;
+}
+.Q-button {
+    display: flex; 
+    margin: 0px 5px 5px 5px; 
+    padding: 25px 30px;
+    background-color: #DDCFAB;
+    color: #74512E;
+    border-radius: 15px;
+    cursor: pointer; 
+    align-items: center;
+    justify-content: center;
+}
+.Q-button:hover{
+    background-color: #AC855C;
+    color: #FFFFFF;
+}
+input:checked + .Q-button {
+    background: #AC855C; 
+    color: #FFFFFF;
+}
+input[type="checkbox"] {
+    display: none; 
+}
+
+.red{
+    background-color: #D62E2E;
+    font-weight: bold;
+}
+
+
+
+
+.next {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    margin-top: 50px
+}
+
+.next ul {
+    /*取消項目符號*/
+    list-style-type: none;
+    display: flex;
+    height: 50%;
+}
+
+.next li {
+    height: 50%;
+    display: contents;
+}
+
+.next a {
+    color: #5D3A00;
+    font-size: 45px;
+    /*取消底線*/
+    text-decoration: none;
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.next a:hover {
+    background-color: #5D3A00;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-bottom: 0px;
+}
+
+.next button {
+    color: #5D3A00;
+    font-size: 45px;
+    /*取消底線*/
+    text-decoration: none;
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    background-color: #D8A36B;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.next button:hover {
+    background-color: #5D3A00;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-bottom: 0px;
+}

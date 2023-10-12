@@ -1,0 +1,125 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif, '微軟正黑體';
+    margin: 0px;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    height: 100%;
+    font-size: 20px;
+}
+
+.point-name{
+    color: #5D3400;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.title{
+    color: #D8A36B;
+    font-size: 24px;
+}
+.content{
+    color: black;
+}
+
+
+.picture{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.picture img{
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.make{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.effect{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.cure{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.significance{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.function{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0px 0px 20px 0px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: auto;
+    padding: 5px 20px;
+    /* margin-right: 20px; */
+    /* margin-left: 100px; */
+    font-size: 22px;
+    background-color: #DDCFAB;
+    color: #5D3A00;
+    border: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #5D3A00;
+    color: #FFFFFF;
+}
+
+
+
+
+/* 滾動軸style */
+::-webkit-scrollbar { /* 整條滾動軸區塊 */
+    width: 7px;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-button { /* 滾動軸按鈕可滾動區塊 */
+    background: transparent;
+    border-radius: 4px;
+    height: 8%;
+}
+::-webkit-scrollbar-thumb { /* 小按鈕 */
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 30%;
+}
+
+/* 顏色 */
+.green{
+    color: #5EB256;
+    font-weight: bold;
+}
+.red{
+    color: #D62E2E;
+    font-weight: bold;
+}
