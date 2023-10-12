@@ -172,6 +172,47 @@ header {
     margin-bottom: 30px;
     margin-top: 20px;
 }
+.delete{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #d86b6b;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 3px 5px;
+    border: 0px;
+    margin-left: 10px;
+}
+.delete:hover{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #f63939;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 3px 5px;
+    border: 0px;
+}
+.save{
+    font-size: 20px;
+    align-items: center;
+    background-color: #82c463;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 3px 5px;
+    border: 0px;
+    margin-left: 10px;
+}
+.save:hover{
+    font-size: 20px;
+    align-items: center;
+    background-color: #6ab547;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 3px 5px;
+    border: 0px;
+    margin-left: 10px;
+}
 
 table{
     width: 100%;

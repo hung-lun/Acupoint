@@ -17,7 +17,7 @@ function login() {
         if(((user == "123") && (pwd == "123"))){
             window.location.href = "./front-index.html"
         }else if(((user == "111") && (pwd == "111"))){
-            window.location.href = "../../back/back-diagnosis.html"
+            window.location.href = "../acu-back/back-diagnosis.html"
         }else{
             alert("帳號或密碼錯誤");
             return false;
