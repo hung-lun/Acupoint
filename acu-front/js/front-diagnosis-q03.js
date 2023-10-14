@@ -3,7 +3,7 @@ var logout1 = document.getElementById("logout");
 logout1.addEventListener("click", logout);
     function logout() {
         if (confirm('確認要登出嗎？') == true) {
-            window.location.href = "../front/login.html";
+            window.location.href = "../acu-front/login.html";
             localStorage.clear();
         } else {
 
@@ -54,10 +54,11 @@ count.innerHTML = "已選"+checkedCount+"/7";
 
     
     function next() {
-        if(checkedCount == 0){
-            alert("最少要選擇1個哦");
-            return false;
-        }else if(checkedCount <= 7){
+        // if(checkedCount == 0){
+        //     alert("最少要選擇1個哦");
+        //     return false;
+        // }else 
+        if(checkedCount <= 7){
 
             window.location.href = "./front-diagnosis-q04.html";
             return true;

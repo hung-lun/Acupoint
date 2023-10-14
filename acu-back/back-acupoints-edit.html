@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/back-acupoints-edit.css">
+    <title>症狀診斷問題管理</title>
+</head>
+<body>
+    <img class="bg" src="./img/main-background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./back-index.html"><img src="./img/mainlogo.png"></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./back-diagnosis.html">問題管理</a>
+                        </li>
+                        <li>
+                            <a class="thispage" href="./back-acupoints.html">穴位資訊管理</a>
+                        </li>
+                        <li>
+                            <a href="">食療資訊管理</a>
+                        </li>
+                        <li>
+                            <a href="">使用者管理</a>
+                        </li>
+                        <li>
+                            <a href="">統計資料</a>
+                        </li>
+                        <li>
+                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <div class="title"><a>穴位資訊編輯</a><a href="./back-acupoints.html"><input type="button" class="back mouse" value="返回"></a></div>
+        <form>
+            <div class="question">穴位1</div>
+            <table>
+                <tr>
+                    <td class="Q-title"><i class="fa-solid fa-font"></i>　穴道名稱：<input class="input_question" type="text" value="魚腰穴"><input type="button" class="update-btn  mouse" id="insert0" value="修改穴道名稱"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title"><i class="fa-solid fa-location-crosshairs"></i>　穴道位置：<input type="button" class="update-btn  mouse" id="insert1" value="修改穴道位置"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title"><i class="fa-solid fa-compress"></i>　按壓方式：<input type="button" class="update-btn  mouse" id="insert2" value="修改按壓方式"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title"><i class="fa-solid fa-signature"></i>　穴名介紹：<input type="button" class="update-btn  mouse" id="insert3" value="修改穴名介紹"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title"><i class="fa-solid fa-book-journal-whills"></i>　穴道介紹：<input type="button" class="update-btn  mouse" id="insert4" value="修改穴道介紹"></td>
+                </tr>
+            </table>
+
+            <!-- <div class="question">穴位2：</div><input class="save mouse" type="button" value="儲存變更">
+            <table>
+                <tr>
+                    <td class="Q-title">穴道名稱：<input class="input_question" type="text" value="攢竹穴"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道位置：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">按壓方式：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴名介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+            </table>
+
+            <div class="question">穴位3：</div><input class="save mouse" type="button" value="儲存變更">
+            <table>
+                <tr>
+                    <td class="Q-title">穴道名稱：<input class="input_question" type="text" value="晴明穴"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道位置：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">按壓方式：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴名介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+            </table>
+
+            <div class="question">穴位4：</div><input class="save mouse" type="button" value="儲存變更">
+            <table>
+                <tr>
+                    <td class="Q-title">穴道名稱：<input class="input_question" type="text" value="瞳子髎穴"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道位置：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">按壓方式：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴名介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+            </table>
+
+            <div class="question">穴位5：</div><input class="save mouse" type="button" value="儲存變更">
+            <table>
+                <tr>
+                    <td class="Q-title">穴道名稱：<input class="input_question" type="text" value="四白穴"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道位置：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">按壓方式：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴名介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+                <tr>
+                    <td class="Q-title">穴道介紹：<input class="input_question" type="text" value="乾澀"></td>
+                </tr>
+            </table> -->
+            <!-- 定義浮動視窗 -->
+         <dialog id="popupp" class="popupp">
+            <table>
+                <tr>
+                    <td id="change" class="popupp-Q-title"></td>
+                </tr>
+            </table>
+            <div class="insertbutton">
+            <button id="insertsend" class="save mouse">確認</button>&nbsp&nbsp
+            <button id="cancel" class="cancle mouse" onclick="return insertcancel()">取消</button>
+        </div>
+        </dialog>
+        </form>
+    </div>
+</body>
+<script src="./js/back-acupoints-edit.js"></script>
+<script src="./ckeditor/ckeditor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
