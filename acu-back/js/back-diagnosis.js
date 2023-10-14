@@ -22,32 +22,53 @@ logout1.addEventListener("click", logout);
         (function getData() {
           axios.get(url).then(function (response) {
             // 檢查
-            console.log(response.data[0]);
+            console.log(response.data);
             // 將取得資料帶入空陣列data中
             data = response.data;
-            // title(data);
+            title(data);
           });
         })();
-        const p_title = document.querySelector(".table_content");
-        let str = "";
-        str += `
-                <tr>
-                    <td class="Q-title">○　<input type="text" value="${response.data[0]}"><input class="delete mouse" type="button" value="刪除"></td>
-                </tr>
+
+        function title(arr) {
+          // 抓取欄位
+          const p_title = document.querySelector(".table_content");
+          let str = "";
+          // 將資料存入
+          arr.forEach(function (data) {
+            str += `
+                    <tr>
+                        <td class="Q-title">○　<input type="text" value="${data.eye_question_content}"><input id="${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                    </tr>
             `;
-        p_title.innerHTML = str;
-      }});
-        // function title(arr) {
-        //   // 抓取欄位
-        //   const p_title = document.querySelector(".table_content");
-        //   let str = "";
-        //   // 將資料存入
-        //   arr.forEach(function (data) {
-        //     str += `
-        //             <tr>
-        //                 <td class="Q-title">○　<input type="text" value="${data.eye_question_content}"><input class="delete mouse" type="button" value="刪除"></td>
-        //             </tr>
-        //     `;
-        //   });
-        //   p_title.innerHTML = str;
-        //   }}});
+          });
+          p_title.innerHTML = str;
+
+          // 抓取欄位
+          const p_title1 = document.querySelector(".table_content1");
+          let str1 = "";
+          // 將資料存入
+          arr.forEach(function (data) {
+            str1 += `
+                    <tr>
+                        <td class="Q-title">○　<input type="text" value="${data.eye_question_content}"><input id="${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                    </tr>
+            `;
+          });
+          p_title1.innerHTML = str1;
+
+
+          // 抓取欄位
+          const p_title2 = document.querySelector(".table_content2");
+          let str2 = "";
+          // 將資料存入
+          arr.forEach(function (data) {
+            str2 += `
+                    <tr>
+                        <td class="Q-title">○　<input type="text" value="${data.eye_question_content}"><input id="${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                    </tr>
+            `;
+          });
+          p_title2.innerHTML = str2;
+
+
+          }}});
