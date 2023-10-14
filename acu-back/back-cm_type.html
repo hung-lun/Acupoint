@@ -9,8 +9,8 @@
     <!--網站icon-->
     <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
     <!--網站icon-->
-    <link rel="stylesheet" href="./css/back-acupoints.css">
-    <title>症狀診斷問題管理</title>
+    <link rel="stylesheet" href="./css/back-cm_type.css">
+    <title>食療資訊管理管理</title>
 </head>
 <body>
     <img class="bg" src="./img/main-background.jpg">
@@ -26,10 +26,10 @@
                             <a href="./back-diagnosis.html">問題管理</a>
                         </li>
                         <li>
-                            <a class="thispage" href="./back-acupoints.html">穴位資訊管理</a>
+                            <a href="./back-acupoints.html">穴位資訊管理</a>
                         </li>
                         <li>
-                            <a href="./back-cm_type.html">食療資訊管理</a>
+                            <a class="thispage" href="./back-cm_type.html">食療資訊管理</a>
                         </li>
                         <li>
                             <a href="./back-user.html">使用者管理</a>
@@ -47,15 +47,34 @@
     </header>
     <div class="fake-header"></div>
     <div class="content">
-        <div class="title"><a>穴位資訊管理</a><a href="./back-acupoints-insert.html"><input type="button" class="insert mouse" value="新增"></a></div>
-            <a href="./back-acupoints-edit.html?test=魚腰穴"><input type="button" class="point mouse" value="魚腰穴"></a>
-            <a href="./back-acupoints-edit.html?test=攢竹穴"><input type="button" class="point mouse" value="攢竹穴"></a>
-            <a href="./back-acupoints-edit.html?test=睛明穴"><input type="button" class="point mouse" value="睛明穴"></a>
-            <a href="./back-acupoints-edit.html?test=瞳子髎穴"><input type="button" class="point mouse" value="瞳子髎穴"></a>
-            <a href="./back-acupoints-edit.html?test=四白穴"><input type="button" class="point mouse" value="四白穴"></a>
+        <div class="title"><a>症狀類型管理</a></div>
+        <div class="content">
+            <table>
+                <tr align="center">
+                    <td><a href="./back-cm_question_medicine.html"><input type="button" class="point mouse" value="肝腎陰虛型"></a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="肺陰不足型"></a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="脾胃濕熱型"></a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="脾肺伏熱型"></a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="肝氣鬱結型"></a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="脾肺虛寒型"></a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="無症狀"></a></td>
+                </tr>
+            </table>
     </div>
 </body>
-<script src="./js/back-acupoints.js"></script>
+<script src="./js/back-cm_type.js"></script>
 <script src="./ckeditor/ckeditor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

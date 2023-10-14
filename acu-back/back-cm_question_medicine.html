@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/back-cm_question_medicine.css">
+    <title>食療資訊管理管理</title>
+</head>
+<body>
+    <img class="bg" src="./img/main-background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./back-index.html"><img src="./img/mainlogo.png"></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./back-diagnosis.html">問題管理</a>
+                        </li>
+                        <li>
+                            <a href="./back-acupoints.html">穴位資訊管理</a>
+                        </li>
+                        <li>
+                            <a class="thispage" href="./back-cm_type.html">食療資訊管理</a>
+                        </li>
+                        <li>
+                            <a href="./back-user.html">使用者管理</a>
+                        </li>
+                        <li>
+                            <a href="">資料總覽</a>
+                        </li>
+                        <li>
+                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <div class="title"><a>症狀按鈕&中醫食療管理</a><a href="./back-cm_type.html"><input type="button" class="insert mouse" value="返回"></a></div>
+        <table>
+            <tr align="center">
+                <td class="point_title">肝腎陰虛型</td>
+            </tr>
+        </table>
+        <div class="qusetion_medicine_content">
+
+            <table>
+                <tr align="center">
+                    <th>症狀按鈕</th>
+                </tr>
+                <tr align="center">
+                    <td>1.　<input type="text" class="point" value="頭暈耳鳴"></td>
+                </tr>
+                <tr align="center">
+                    <td>2.　<input type="text" class="point" value="腰膝痠痛"></td>
+                </tr>
+                <tr align="center">
+                    <td>3.　<input type="text" class="point" value="睡眠不穩"></td>
+                </tr>
+                <tr align="center">
+                    <td>4.　<input type="text" class="point" value="月經失調"></td>
+                </tr>
+                <tr align="center">
+                    <td><input type="button" class="point mouse" value="修改"></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr align="center">
+                    <th>中醫食療</th>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="杞菊地黃丸"></a></td>
+                </tr>
+                <tr align="center">
+                    <td><a href=""><input type="button" class="point mouse" value="滋腎明目湯"></a></td>
+                </tr>
+            </table>
+        </div>
+            
+    </div>
+</body>
+<script src="./js/back-cm_question_medicine.js"></script>
+<script src="./ckeditor/ckeditor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

@@ -8,6 +8,4 @@ logout1.addEventListener("click", logout);
 
         }
     }
-
-
-      
+    
