@@ -86,4 +86,5 @@ var ff1 = parseInt(ff, 24);
 var gg1 = parseInt(gg, 24);
 
 var total = aa1+bb1+cc1+dd1+ee1+ff1+gg1;
+console.log(total);
 // alert(total);

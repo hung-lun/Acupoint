@@ -76,7 +76,7 @@ const url = "https://localhost:7105/api/Eye_question/GetQuestion";
             const p_title = document.querySelector("#question_content2");
             let str = "";
             // 將資料存入
-            let aa = 0;
+            let aa = 5;
             arr.forEach(function (data) {
               aaa=`
               <tr>
@@ -130,4 +130,5 @@ var gg1 = parseInt(gg, 24);
 var hh1 = parseInt(hh, 24);
 
 var total = aa1+bb1+cc1+dd1+ee1+ff1+gg1+hh1;
+console.log(total);
 // alert(total);
