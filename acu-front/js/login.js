@@ -22,7 +22,7 @@ function login() {
           (response.status === 200) &
           (response.data.user.user_level == true)
         ) {
-          alert("即將進入會員畫面");
+          // alert("即將進入使用者畫面");
           console.log(response.data.encodedJwt); //token
           localStorage.setItem("login", response.data.encodedJwt); //設定名為login的localStoragea存入token資料
           var login = localStorage.getItem("login"); //抓名為login的localStoragea裡的資料
@@ -38,7 +38,7 @@ function login() {
           (response.status === 200) &
           (response.data.user.user_level == false)
         ) {
-          alert("即將進入管理員畫面");
+          // alert("即將進入管理員畫面");
           console.log(response.data.encodedJwt);
           localStorage.setItem("login", response.data.encodedJwt);
           var login = localStorage.getItem("login");

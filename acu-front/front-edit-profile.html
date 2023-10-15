@@ -48,23 +48,23 @@
     <div class="content">
         <form>　<a class="title">修改個人資料</a>
             <div class="signup-content">
-                <div class="signup-user">帳號：　<input class="disable" type="text" id="user" name="user" placeholder="email" value="s1311131028@nutc.edu.tw" disabled="disabled"></div>
-                <div class="signup-user">姓名：　<input type="text" id="user" name="user" placeholder="name" required></div>
-                <div class="signup-user">性別：　<select class="text" name="sex">
+                <div class="signup-user">帳號：　<input class="disable" type="text" id="user" name="user" placeholder="email" value="" disabled="disabled"></div>
+                <div class="signup-user">姓名：　<input type="text" id="name" name="user" placeholder="name" required></div>
+                <div class="signup-user">性別：　<select class="text" id="sex" name="sex">
                     <option value="">請選擇性別</option>
-                    <option value="boy">男生</option>
-                    <option value="gril">女生</option>
-                    <option value="unknow">不願透漏</option>
+                    <option value="1">男生</option>
+                    <option value="2">女生</option>
+                    <option value="0">不願透漏</option>
                 </select></div>
-                <div class="signup-user">年齡：　<input class="age" type="number" id="user" name="user" placeholder="age" required></div>
+                <div class="signup-user">年齡：　<input class="age" type="number" id="age" name="user" placeholder="age" required></div>
                 <div class="function">
                     <div class="signup-button"><input type="reset" class="signupb mouse" id="reset" value="重設" onclick=""></div>
-                    <div class="signup-button"><input type="button" class="signupb mouse" id="next" value="修改" onclick=""></div>
+                    <div class="signup-button"><input type="button" class="signupb mouse" id="next" value="修改" onclick="return nextt()"></div>
                 </div>
             </div>
         </form>
     </div>
 </body>
-<script src="./js/"></script>
+<script src="./js/front-edit-profile.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

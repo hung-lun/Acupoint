@@ -46,12 +46,37 @@ logout1.addEventListener("click", logout);
           arr.forEach(function (data) {
             str += `
                     <tr>
-                        <td class="Q-title">○　<input type="text" value="${data.eye_question_content}"><input id="${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
                     </tr>
             `;
           });
           p_title.innerHTML = str;
+          arr.forEach(function (data) {
+          var aas = document.getElementById("save" + `${data.eye_question_id}`)
+        console.log(aas);
+        var edit_question = document.getElementById("edit_question" + `${data.eye_question_id}`);
+      function aa(e) {
+            const formData = new FormData();
+            // 添加文本字段
+            formData.append('eye_question_id', `${data.eye_question_id}`);
+            formData.append('eye_question_content', edit_question.value);
+
+            axios.put('https://localhost:7105/api/Eye_question/PutEye_Question/'+`${data.eye_question_id}`+'/'+edit_question.value, {
+                headers: {
+                    'Content-Type': 'text/plain'
+                }
+            }).then(response => {
+                console.log('Response:', response);
+                // window.location.href = "back-news.html";
+                  location.reload();
+                alert("編輯成功");
+            }).catch(error => {
+                console.error('Error:', error);
+            });
         }
+        aas.addEventListener('click', aa);
+      });
+    }
 
         function title1(arr) {
           // 抓取欄位
@@ -61,14 +86,40 @@ logout1.addEventListener("click", logout);
           arr.forEach(function (data) {
             str1 += `
                     <tr>
-                        <td class="Q-title">○　<input type="text" value="${data.eye_question_content}"><input id="${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
                     </tr>
             `;
           });
           p_title1.innerHTML = str1;
+
+          arr.forEach(function (data) {
+            var aas = document.getElementById("save" + `${data.eye_question_id}`)
+          console.log(aas);
+          var edit_question = document.getElementById("edit_question" + `${data.eye_question_id}`);
+        function aa(e) {
+              const formData = new FormData();
+              // 添加文本字段
+              formData.append('eye_question_id', `${data.eye_question_id}`);
+              formData.append('eye_question_content', edit_question.value);
+  
+              axios.put('https://localhost:7105/api/Eye_question/PutEye_Question/'+`${data.eye_question_id}`+'/'+edit_question.value, {
+                  headers: {
+                      'Content-Type': 'text/plain'
+                  }
+              }).then(response => {
+                  console.log('Response:', response);
+                  // window.location.href = "back-news.html";
+                    location.reload();
+                  alert("編輯成功");
+              }).catch(error => {
+                  console.error('Error:', error);
+              });
+          }
+          aas.addEventListener('click', aa);
+        });
           }
 
-
+          
           function title2(arr) {
           // 抓取欄位
           const p_title2 = document.querySelector(".table_content2");
@@ -77,11 +128,44 @@ logout1.addEventListener("click", logout);
           arr.forEach(function (data) {
             str2 += `
                     <tr>
-                        <td class="Q-title">○　<input type="text" value="${data.eye_question_content}"><input id="${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
                     </tr>
             `;
           });
           p_title2.innerHTML = str2;
 
+          arr.forEach(function (data) {
+            var aas = document.getElementById("save" + `${data.eye_question_id}`)
+          console.log(aas);
+          var edit_question = document.getElementById("edit_question" + `${data.eye_question_id}`);
+        function aa(e) {
+              const formData = new FormData();
+              // 添加文本字段
+              formData.append('eye_question_id', `${data.eye_question_id}`);
+              formData.append('eye_question_content', edit_question.value);
+  
+              axios.put('https://localhost:7105/api/Eye_question/PutEye_Question/'+`${data.eye_question_id}`+'/'+edit_question.value, {
+                  headers: {
+                      'Content-Type': 'text/plain'
+                  }
+              }).then(response => {
+                  console.log('Response:', response);
+                  // window.location.href = "back-news.html";
+                    location.reload();
+                  alert("修改成功");
+              }).catch(error => {
+                  console.error('Error:', error);
+                  alert("error:錯誤");
+              });
+          }
+          aas.addEventListener('click', aa);
+        });
+        }
+      
+      
+        
 
-          }}});
+    }
+    
+
+      });

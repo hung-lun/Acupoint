@@ -27,6 +27,29 @@ function nextt() {
         alert("年齡不可小於1");
         return false;
     }else{
-        window.location.href = "./signup-verification.html"
+        console.log(mail,pwdcheck,name,sex,age);
+    const formData = new FormData();
+    formData.append("user_account", mail);
+    formData.append("user_password", pwdcheck);
+    formData.append("user_name", name);
+    formData.append("user_gender", sex);
+    formData.append("user_age", age);
+    axios
+      .post("https://localhost:7105/api/User/Register", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        console.log("Response:", response.data);
+        // alert("驗證碼已發送至信箱");
+        alert(response.data.message);
+        window.location.href = "./signup-verification.html?Account=" + mail;
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert(error.response.data);
+      });
+        
     }
 }
