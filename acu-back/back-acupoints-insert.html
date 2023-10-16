@@ -17,7 +17,7 @@
     <header>
         <div class="header-content">
             <div class="logo ">
-                <a href="./back-index.html"><img src="./img/mainlogo.png"></a>
+                <a href="./back-diagnosis.html"><img src="./img/mainlogo.png"></a>
             </div>
             <div class="center-box">
                 <nav class="menu">
@@ -151,14 +151,14 @@
                 </tr>
             </table>
             <div class="insertbutton">
-            <button id="insertsend" class="save mouse">確認</button>&nbsp&nbsp
+            <button id="insert" class="save mouse" onclick="return insertsend()">確認</button>&nbsp&nbsp
             <button id="cancel" class="cancle mouse" onclick="return insertcancel()">取消</button>
-        </div>
+            </div>
         </dialog>
         </form>
     </div>
 </body>
-<script src="./js/back-acupoints-edit.js"></script>
+<script src="./js/back-acupoints-insert.js"></script>
 <script src="./ckeditor/ckeditor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

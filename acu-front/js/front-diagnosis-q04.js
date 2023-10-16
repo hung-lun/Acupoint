@@ -41,6 +41,7 @@ console.log(count6);
 
 var medicine_button = document.getElementById("medicine_button");
 var result04 = document.getElementById("result04");
+var result00 = document.getElementById("result00");
 if((count1 > count2) & (count1 > count3) & (count1 > count4) & (count1 > count5) & (count1 > count6)){
     medicine_button.innerHTML="<label><input id='m0101' class='mouse button' type='radio' name='MM' value='杞菊地黃丸' checked/><span class='medicine-button mouse'>杞菊地黃丸</span></label><label><input id='m0102' class='mouse button' type='radio' name='MM' value='滋腎明目湯' /><span class='medicine-button mouse'>滋腎明目湯</span></label>"
     result04.innerHTML="”肝腎陰虛型”"
@@ -144,6 +145,11 @@ if((count1 > count2) & (count1 > count3) & (count1 > count4) & (count1 > count5)
         document.getElementById("medicine").src = "../acu-front/medicine/06-01.html";
     }
 }else if((count1 == 0) & (count2 == 0) & (count3 == 0) & (count4 == 0) & (count5 == 0) & (count6 == 0)){
-    medicine_button.innerHTML=""
+    medicine_button.innerHTML="<label><input id='m0001' class='mouse button' type='radio' name='MM' value='枸杞菊花茶' checked/><span class='medicine-button mouse'>枸杞菊花茶</span></label><label><input id='m0002' class='mouse button' type='radio' name='MM' value='枸杞夏枯草' /><span class='medicine-button mouse'>枸杞夏枯草</span></label><label><input id='m0003' class='mouse button' type='radio' name='MM' value='黃耆枸杞紅棗茶' /><span class='medicine-button mouse'>黃耆枸杞紅棗茶</span></label>"
     result04.innerHTML="”無症狀”"
+    result00.innerHTML="<div class='result001'>”無症狀，日常可以飲用以下中藥食療。”</div>"
+}else{
+    medicine_button.innerHTML="<label><input id='m0001' class='mouse button' type='radio' name='MM' value='枸杞菊花茶' checked/><span class='medicine-button mouse'>枸杞菊花茶</span></label><label><input id='m0002' class='mouse button' type='radio' name='MM' value='枸杞夏枯草' /><span class='medicine-button mouse'>枸杞夏枯草</span></label><label><input id='m0003' class='mouse button' type='radio' name='MM' value='黃耆枸杞紅棗茶' /><span class='medicine-button mouse'>黃耆枸杞紅棗茶</span></label>"
+    result04.innerHTML="”與多症狀類型相符”"
+    result00.innerHTML="<div class='result001'>”與多症狀類型相符，日常可以多飲用以下中藥食療，進階中醫食療請向中醫師諮詢。”</div>"
 }

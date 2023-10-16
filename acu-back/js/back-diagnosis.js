@@ -46,9 +46,10 @@ logout1.addEventListener("click", logout);
           arr.forEach(function (data) {
             str += `
                     <tr>
-                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"></td>
                     </tr>
             `;
+            // <input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></input>
           });
           p_title.innerHTML = str;
           arr.forEach(function (data) {
@@ -86,9 +87,10 @@ logout1.addEventListener("click", logout);
           arr.forEach(function (data) {
             str1 += `
                     <tr>
-                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"></td>
                     </tr>
             `;
+            // <input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></input>
           });
           p_title1.innerHTML = str1;
 
@@ -128,9 +130,10 @@ logout1.addEventListener("click", logout);
           arr.forEach(function (data) {
             str2 += `
                     <tr>
-                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"><input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></td>
+                        <td class="Q-title">○　<input id="edit_question${data.eye_question_id}" type="text" value="${data.eye_question_content}"><input id="save${data.eye_question_id}" class="save mouse" type="button" value="儲存變更"></td>
                     </tr>
             `;
+            // <input id="delete${data.eye_question_id}" class="delete mouse" type="button" value="刪除"></input>
           });
           p_title2.innerHTML = str2;
 

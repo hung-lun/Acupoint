@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--網站icon-->
+    <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
+    <!--網站icon-->
+    <link rel="stylesheet" href="./css/back-acupoints-correction.css">
+    <title>穴位復健</title>
+</head>
+<body>
+    <img class="bg" src="./img/main-background.jpg">
+    <header>
+        <div class="header-content">
+            <div class="logo ">
+                <a href="./back-diagnosis.html"><img src="./img/mainlogo.png"></a>
+            </div>
+            <div class="center-box">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./back-diagnosis.html">問題管理</a>
+                        </li>
+                        <li>
+                            <a class="thispage" href="./back-acupoints.html">穴位資訊管理</a>
+                        </li>
+                        <li>
+                            <a href="./back-cm_type.html">食療資訊管理</a>
+                        </li>
+                        <li>
+                            <a href="./back-user.html">使用者管理</a>
+                        </li>
+                        <li>
+                            <a href="">資料總覽</a>
+                        </li>
+                        <li>
+                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fake-header"></div>
+    <div class="content">
+        <div class="title">穴位資訊管理 - 穴位校正<a href="./back-acupoints.html"><input type="button" class="insert mouse" value="返回"></a></div>
+        <form>
+            <div class="all-content">
+                <div class="contentt">
+                    <div class="photo-content"><img src="./img/background.jpg"></div>
+                    <div class="button-content">
+                        <div class="ppoints">
+                            <div class="points"><a class="">魚腰穴</a>　　ｘ：<input type="text" id="point01x">　ｙ：<input type="text" id="point01y">　<button class="save mouse">儲存</button></div>
+                            <div class="points">攢竹穴　　ｘ：<input type="text" id="point02x">　ｙ：<input type="text" id="point02y">　<button class="save mouse">儲存</button></div>
+                            <div class="points">晴明穴　　ｘ：<input type="text" id="point03x">　ｙ：<input type="text" id="point03y">　<button class="save mouse">儲存</button></div>
+                            <div class="points">瞳子髎穴　ｘ：<input type="text" id="point04x">　ｙ：<input type="text" id="point04y">　<button class="save mouse">儲存</button></div>
+                            <div class="points">四白穴　　ｘ：<input type="text" id="point05x">　ｙ：<input type="text" id="point05y">　<button class="save mouse">儲存</button></div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+<script src="./js/back-acupoints-correction.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
