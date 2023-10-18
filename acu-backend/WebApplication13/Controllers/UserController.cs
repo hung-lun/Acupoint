@@ -173,6 +173,7 @@ namespace WebApplication13.Controllers
             // 判斷頁面資料是否都經過驗證
             if (ModelState.IsValid)
             {
+                string authCode = _mailService.GetValidateCode();
                 var result = _userDBService.ChangePassword(user_account, ChangeData.user_pwd, ChangeData.NewPassword);
                 var response = new { result = result };
 
@@ -182,15 +183,6 @@ namespace WebApplication13.Controllers
 
             }
             return Ok();
-        }
-        #endregion
-        #region 刪除留言
-        public ActionResult DeleteUser(int Id)
-        {
-            // 使用 Service 來刪除資料
-            _userDBService.DeleteUser(Id);
-            // 重新導向頁面至開始頁面
-            return RedirectToAction("Index");
         }
         #endregion
 
@@ -227,7 +219,6 @@ namespace WebApplication13.Controllers
                 User Data = new User();
                 conn.Close();
                 string sql = $@" select * from ""user"" where user_account =@user_account ";
-
                 try
                 {
                     conn.Open();
@@ -245,6 +236,10 @@ namespace WebApplication13.Controllers
                     Data.user_authcode = dr["user_authcode"].ToString();
                     Data.user_level = Convert.ToBoolean(dr["user_level"]);
                     Data.isdel = Convert.ToBoolean(dr["isdel"]);
+                    Data.create_time = Convert.ToDateTime(dr["create_time"]);
+                    Data.update_id = dr["user_account"].ToString();
+                    Data.update_time = Convert.ToDateTime(dr["update_time"]);
+
                 }
                 catch (Exception e)
                 {
@@ -263,6 +258,7 @@ namespace WebApplication13.Controllers
             }
             else
             {
+
                 // 有驗證錯誤訊息，加入頁面模型中
                 ModelState.AddModelError("", ValidateStr);
                 return BadRequest(ValidateStr);

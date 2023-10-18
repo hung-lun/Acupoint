@@ -4,8 +4,10 @@ namespace WebApplication13.Model
 {
     public class Eye_QuestionModel
     {
+        public int Id { get; set; }
+
         [Key]
-        public Guid eye_question_id { get; set; } = Guid.NewGuid();//乾眼症檢測問題編號
+        public Guid eye_question_id { get; set; } //乾眼症檢測問題編號
         public string eye_question_content { get; set; }//乾眼症檢測問題內容
         public bool isdel { get; set; }
         public string create_id { get; set; }

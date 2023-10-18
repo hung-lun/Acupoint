@@ -69,10 +69,10 @@ namespace WebApplication13.Service
         #endregion
 
 
-        #region 後 - 修改狀態
+        #region 後 - 修改狀態(測試)
         public string B_PutUser(User_B_UpdateViewModel value)
         {
-            string sql = $@"UPDATE ""user"" SET user_start=@user_start WHERE user_id = @user_id";
+            string sql = $@"UPDATE ""user"" SET isdel='true' WHERE user_id = @user_id";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -200,7 +200,6 @@ namespace WebApplication13.Service
                 command.Parameters.AddWithValue("@user_id", Guid.NewGuid());
                 command.Parameters.AddWithValue("@user_account", newMember.user_account);
                 command.Parameters.AddWithValue("@user_password", newMember.user_password);
-                command.Parameters.AddWithValue("@user_newpassword", newMember.user_newpassword);
                 command.Parameters.AddWithValue("@user_name", newMember.user_name);
                 command.Parameters.AddWithValue("@user_gender", newMember.user_gender);
                 command.Parameters.AddWithValue("@user_age", newMember.user_age);
@@ -345,8 +344,11 @@ namespace WebApplication13.Service
 
                     // 將資料庫中的驗證碼設為空
                     //sql 更新語法
-                    string sql = $@"SELECT * FROM ""user"" where user_account ='{user_account}' and user_start='1' ";
+                    //string sql = $@"SELECT * FROM ""user"" where user_account ='{user_account}' and user_start='1' ";
                     // string sql = $@" update  ""user""  set  user_authcode = '{string.Empty}'  ,   user_start='1' where user_account = '{user_account}' ";
+
+                    string sql = $@" update  ""user""  set    user_start='1' where user_account = '{user_account}' ";
+
 
                     try
                     {

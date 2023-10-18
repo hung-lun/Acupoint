@@ -14,9 +14,7 @@ namespace WebApplication13.Model
         public string chinese_medicinal_main { get; set; }//中藥主治
         public string chinese_medicinal_explain { get; set; }//中藥方義
         public string chinese_medicinal_other { get; set; }//中藥加減
-        public string chinese_medicinal_type { get; set; }
-
-        public Guid CM_type_id { get; set; }
+        public int CM_type_id { get; set; }
         public bool isdel { get; set; }
         public string create_id { get; set; }
         public DateTime create_time { get; set; }

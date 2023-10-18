@@ -25,7 +25,7 @@ namespace WebApplication13.Service
 
         }
         #region 新增診斷題目
-        public string ShowDiagnostics(Eye_questionViewModel value)
+        public string NewQuestion(Eye_questionViewModel value)
         {
 
             SqlConnection conn = new SqlConnection(connectionString);
@@ -65,6 +65,119 @@ namespace WebApplication13.Service
             }
         }
         #endregion
+
+        #region 修改題目
+        public string PutEye_Question(GetEye_questionViewModel value)
+        {
+            string sql = $@"UPDATE Eye_question SET eye_question_content=@eye_question_content WHERE eye_question_id=@eye_question_id";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(sql, conn);
+                try
+                {
+                    conn.Open();
+                    command.Parameters.AddWithValue("@eye_question_id", value.eye_question_id);
+                    command.Parameters.AddWithValue("@eye_question_content", value.eye_question_content);
+                    int row = command.ExecuteNonQuery();
+                    if (row > 0)
+                    {
+                        return "修改成功！";
+                    }
+                    else
+                    {
+                        return "修改失敗，請重試！";
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw new Exception(e.Message.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+        #endregion
+
+        #region 刪除題目
+        public string DeleteEye_Question(string eye_question_id)
+        {
+            string sql = $@"  UPDATE Eye_question SET isdel=@isdel WHERE eye_question_id = @eye_question_id";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(sql, conn);
+                try
+                {
+                    conn.Open();
+                    command.Parameters.AddWithValue("@isdel", '1');
+                    command.Parameters.AddWithValue("@eye_question_id", eye_question_id);
+                    int num = command.ExecuteNonQuery();
+                    if (num > 0)
+                    {
+                        return "修改成功！";
+                    }
+                    else
+                    {
+                        return "修改失敗，請重試！";
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw new Exception(e.Message.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+        }
+        #endregion
+
+
+        #region 總覽問題
+        public List<GetEye_questionViewModel> GetQuestion()
+        {
+            string Sql = "SELECT * FROM Eye_question where isdel='false'  ORDER BY Id  ASC ";
+            List< GetEye_questionViewModel> DataList = new List<GetEye_questionViewModel>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(Sql, conn);
+                try
+                {
+                    conn.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        GetEye_questionViewModel Data = new GetEye_questionViewModel();
+                        Data.Id = Convert.ToInt32(reader["Id"]);
+                        Data.eye_question_id = (Guid)reader["eye_question_id"];
+                        Data.eye_question_content = reader["eye_question_content"].ToString();
+                        DataList.Add(Data);
+                    }
+                }
+                catch (Exception e)
+                {
+                    //丟出錯誤
+                    throw new Exception(e.Message.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                }
+                return DataList;
+            }
+        }
+        #endregion
+
+        
+
+
+
+
+
+
     }
 }
 

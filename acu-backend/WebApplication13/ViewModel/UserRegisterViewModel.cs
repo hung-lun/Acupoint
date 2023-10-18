@@ -8,13 +8,10 @@ namespace WebApplication13.ViewModel
     {
 
         public string user_account { get; set; }
-
-        
         public string user_password { get; set; }
-        public string user_newpassword { get; set; }
         public string user_name { get; set; }
 
-        public int user_gender { get; set; }
+        public int  user_gender { get; set; }
 
         public int user_age { get; set; }
 

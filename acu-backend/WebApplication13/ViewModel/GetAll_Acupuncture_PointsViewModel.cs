@@ -1,0 +1,19 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace WebApplication13.ViewModel
+{
+    public class GetAll_Acupuncture_PointsViewModel
+
+    {
+        public Guid acupuncture_points_id { get; set; } //穴位資訊編號
+        public string acupuncture_points_name { get; set; }//穴道名稱
+        public string acupuncture_points_location { get; set; }//穴道位置
+        public string acupuncture_points_press { get; set; }//按壓方式
+        public string acupuncture_points_detail { get; set; }//穴名介紹
+        public string acupuncture_points_content { get; set; }//穴道介紹
+        public string acupuncture_points_img { get; set; }
+
+
+
+    }
+}

@@ -22,39 +22,54 @@ namespace WebApplication13.Controllers
     public class D_recordController : ControllerBase
     {
 
-        private readonly UserDBService _userService;
+       
         private readonly IConfiguration _config;
         private readonly string connectionString;
-        private readonly ForgetPwdDBService _forgetPwdService;
         private readonly D_recordDBService _d_recordDBService;
-        private readonly Eye_questionDBService _eye_questionDBService;
+    
 
 
-        public D_recordController(UserDBService userService, IConfiguration config, ForgetPwdDBService forgetPwdService, D_recordDBService d_recordDBService,Eye_questionDBService eye_questionDBService)
+        public D_recordController(IConfiguration config, D_recordDBService d_recordDBService)
         {
-
-            _userService = userService;
+        
             _config = config;
             connectionString = _config.GetConnectionString("Local");
-            _forgetPwdService = forgetPwdService;
             _d_recordDBService = d_recordDBService;
-            _eye_questionDBService= eye_questionDBService;
+       
         }
-        #region
 
-        [HttpGet]
-        public IActionResult ShowDiagnostics( Eye_questionViewModel value)
+        #region 送出診斷
+
+        [HttpPost]
+        [Route("PostD_record")]
+        public IActionResult PostD_record( Guid user_id,Guid eye_question_id, int D_record_score)
         {
-            var result = _eye_questionDBService.ShowDiagnostics(value);
+            var result = _d_recordDBService.PostD_record(user_id, eye_question_id,D_record_score);
             if (result == null)
             {
                 return NotFound("找不到資源");
             }
             return Ok(result);
-       
+
         }
         #endregion
-       
+
+        #region 總覽診斷紀錄
+
+        [HttpGet]
+        [Route("GetD_record")]
+        public IActionResult GetD_record(Guid user_id, DateTime D_record_date)
+        {
+            var result = _d_recordDBService.GetD_record(user_id, D_record_date);
+            if (result == null)
+            {
+                return NotFound("找不到資源");
+            }
+            return Ok(result);
+
+        }
+        #endregion
+
 
     }
 }

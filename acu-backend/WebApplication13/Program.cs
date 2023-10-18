@@ -92,6 +92,13 @@ builder.Services.AddSingleton<UserDBService>();
 builder.Services.AddSingleton<MailDBService>();
 builder.Services.AddSingleton<JwtService>();
 builder.Services.AddSingleton<ForgetPwdDBService>();
+builder.Services.AddSingleton<Eye_questionDBService>();
+builder.Services.AddSingleton<D_recordDBService>();
+builder.Services.AddSingleton<Acupuncture_PointsDBService>();
+builder.Services.AddSingleton<Chinese_MedicineDBService>();
+builder.Services.AddSingleton<R_RecordDBService>();
+builder.Services.AddSingleton<CM_outputDBService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -104,8 +111,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
-
+app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 app.MapControllers();
 
 app.Run();

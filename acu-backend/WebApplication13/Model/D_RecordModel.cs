@@ -11,11 +11,10 @@ namespace WebApplication13.Model
         public DateTime D_record_date { get; set; }//紀錄日期
     
         public Guid eye_question_id   { get; set; }
-        /// <summary>
         ///問題編號 
-        /// </summary>
-
         public int D_record_score { get; set; }//選擇的分數
+
+
         public bool isdel { get; set; }
         public string create_id { get; set; }
         public DateTime create_time { get; set; }

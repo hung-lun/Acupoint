@@ -1,56 +1,63 @@
+<!-- 使用者管理(總覽/停啟用) -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!--網站icon-->
     <link rel="icon" href="./img/webicon.png" type="image/x-icon" />
     <!--網站icon-->
-    <link rel="stylesheet" href="./css/back-user.css">
+    <link rel="stylesheet" href="./css/back-user.css" />
     <title>使用者管理</title>
-</head>
-<body>
-    <img class="bg" src="./img/main-background.jpg">
+  </head>
+  <body>
+    <img class="bg" src="./img/main-background.jpg" />
     <header>
-        <div class="header-content">
-            <div class="logo ">
-                <a href="./back-diagnosis.html"><img src="./img/mainlogo.png"></a>
-            </div>
-            <div class="center-box">
-                <nav class="menu">
-                    <ul>
-                        <li>
-                            <a href="./back-diagnosis.html">問題管理</a>
-                        </li>
-                        <li>
-                            <a href="./back-acupoints.html">穴位資訊管理</a>
-                        </li>
-                        <li>
-                            <a href="./back-cm_type.html">食療資訊管理</a>
-                        </li>
-                        <li>
-                            <a class="thispage" href="./back-user.html">使用者管理</a>
-                        </li>
-                        <li>
-                            <a href="">資料總覽</a>
-                        </li>
-                        <li>
-                            <a id="logout" class="mouse"><i class="fa-solid fa-right-from-bracket">登出</i></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="header-content">
+        <div class="logo">
+          <a href="./back-diagnosis.html"><img src="./img/mainlogo.png" /></a>
         </div>
+        <div class="center-box">
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="./back-diagnosis.html">問題管理</a>
+              </li>
+              <li>
+                <a href="./back-acupoints.html">穴位資訊管理</a>
+              </li>
+              <li>
+                <a href="./back-cm_type.html">食療資訊管理</a>
+              </li>
+              <li>
+                <a class="thispage" href="./back-user.html">使用者管理</a>
+              </li>
+              <li>
+                <a href="">資料總覽</a>
+              </li>
+              <li>
+                <a id="logout" class="mouse"
+                  ><i class="fa-solid fa-right-from-bracket">登出</i></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <div class="fake-header"></div>
     <div class="content">
-        <div class="title">使用者管理</div>
-        <table class="table_content">
-            <!-- <tr align="center">
+      <div class="title">使用者管理</div>
+      <table class="table_content">
+        <!-- <tr align="center">
                 <th>帳號</th>
                 <th>姓名</th>
                 <th>權限</th>
@@ -62,9 +69,9 @@
                 <td>會員</td>
                 <td><input type="button" class="stop-btn mouse" value="停用"></td>
             </tr> -->
-        </table>
+      </table>
     </div>
-</body>
-<script src="./js/back-user.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+  <script src="./js/back-user.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>
